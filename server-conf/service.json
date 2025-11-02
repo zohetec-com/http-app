@@ -1,0 +1,9 @@
+{
+	"instances":[
+		{
+			"subtask":[
+                                "/httpd"],
+			"auto":1
+		}
+	]
+}

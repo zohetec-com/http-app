@@ -1,0 +1,19 @@
+{
+  "import": [
+    {
+      "library":["libmicrohttpd.so"]
+    },
+    {
+      "name": [
+        "httpd"
+      ],
+      "library":"libhttp-app.so"
+    },
+    {
+      "name": [
+	"service"
+      ],
+      "library":"libjgb-misc.so"
+    }
+  ]
+}
