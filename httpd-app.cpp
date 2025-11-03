@@ -61,6 +61,7 @@ request_dispatch (void *cls,
     response =
         MHD_create_response_from_buffer (resp_text.length(),
                                                (void*) resp_text.c_str(), MHD_RESPMEM_MUST_COPY);
+    MHD_add_response_header (response, "Content-Type", "application/json; charset=utf-8");
     ret = MHD_queue_response (connection,
                              MHD_HTTP_OK,
                              response);
