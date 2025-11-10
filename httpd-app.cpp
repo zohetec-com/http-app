@@ -43,7 +43,7 @@ request_dispatch (void *cls,
     int r;
     std::string resp_text = "not found";
 
-    r = jgb::url_get_part(&s, &e);
+    r = jgb::path_get_part(&s, &e);
     if(!r)
     {
         if(!strncmp("conf", s, e - s))
